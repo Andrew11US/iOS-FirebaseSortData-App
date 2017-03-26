@@ -59,6 +59,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     @IBAction func sendBtnTapped(_ sender: AnyObject) {
+        
         if let msgText = msgField.text , !msgText.isEmpty {
             let msg = [
                 "text": msgText,
