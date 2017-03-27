@@ -17,6 +17,7 @@
 		90BC64511E8849410035A339 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC64501E8849410035A339 /* DataService.swift */; };
 		90BC64531E88495B0035A339 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC64521E88495B0035A339 /* Message.swift */; };
 		90BC64551E8849640035A339 /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90BC64541E8849640035A339 /* MessageCell.swift */; };
+		90E064F11E891A8B00C2FFC8 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90E064F01E891A8B00C2FFC8 /* CustomButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		90BC64501E8849410035A339 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		90BC64521E88495B0035A339 /* Message.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		90BC64541E8849640035A339 /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		90E064F01E891A8B00C2FFC8 /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		D10B8BEA055DA5D1FDA6E3E5 /* Pods-FirebaseSortData.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSortData.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSortData/Pods-FirebaseSortData.debug.xcconfig"; sourceTree = "<group>"; };
 		D47D66462025B678C6C8C7FC /* Pods_FirebaseSortData.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseSortData.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCD6DFEC109F2E5CA6B55EAC /* Pods-FirebaseSortData.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseSortData.release.xcconfig"; path = "Pods/Target Support Files/Pods-FirebaseSortData/Pods-FirebaseSortData.release.xcconfig"; sourceTree = "<group>"; };
@@ -94,6 +96,7 @@
 				90BC64501E8849410035A339 /* DataService.swift */,
 				90BC64521E88495B0035A339 /* Message.swift */,
 				90BC64541E8849640035A339 /* MessageCell.swift */,
+				90E064F01E891A8B00C2FFC8 /* CustomButton.swift */,
 				90BC644E1E8844320035A339 /* GoogleService-Info.plist */,
 				90BC64481E8843A90035A339 /* Info.plist */,
 			);
@@ -227,6 +230,7 @@
 			files = (
 				90BC64511E8849410035A339 /* DataService.swift in Sources */,
 				90BC64551E8849640035A339 /* MessageCell.swift in Sources */,
+				90E064F11E891A8B00C2FFC8 /* CustomButton.swift in Sources */,
 				90BC64531E88495B0035A339 /* Message.swift in Sources */,
 				90BC643F1E8843A90035A339 /* ViewController.swift in Sources */,
 				90BC643D1E8843A90035A339 /* AppDelegate.swift in Sources */,

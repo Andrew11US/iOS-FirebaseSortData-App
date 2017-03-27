@@ -9,7 +9,7 @@
 import UIKit
 import Firebase
 
-class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet weak var msgField: UITextField!
     @IBOutlet weak var tableView: UITableView!
@@ -19,8 +19,9 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        tableView.delegate = self
-        tableView.dataSource = self
+        self.msgField.delegate = self
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
         
         DataService.ds.MSGS_DB_REF.queryOrdered(byChild: "text").observe(.value, with: { (snapshot) in
             
@@ -37,6 +38,16 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             self.tableView.reloadData()
         })
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+        self.tableView.endEditing(true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        msgField.resignFirstResponder()
+        return true
     }
     
     func numberOfSections(in tableView: UITableView) -> Int {
