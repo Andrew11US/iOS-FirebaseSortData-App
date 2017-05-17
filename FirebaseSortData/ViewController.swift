@@ -23,7 +23,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
         self.tableView.delegate = self
         self.tableView.dataSource = self
         
-        DataService.ds.MSGS_DB_REF.queryOrdered(byChild: "text").observe(.value, with: { (snapshot) in
+        DataService.ds.MSGS_DB_REF.queryOrdered(byChild: "postedDate").observe(.value, with: { (snapshot) in
             
             self.msgs = []
             
@@ -32,7 +32,7 @@ class ViewController: UIViewController, UITextFieldDelegate, UITableViewDelegate
                     if let postDict = snap.value as? [String: AnyObject] {
                         let message = Message(msgId: snap.key, msgData: postDict)
                         self.msgs.append(message)
-                        //self.msgs.insert(message, at: 0)
+                        
                     }
                 }
             }
